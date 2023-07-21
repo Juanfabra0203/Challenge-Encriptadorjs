@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador challenge</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="encriptador">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui">
+            <textarea 
+            name="texto" 
+            class="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Ingrese el texto aqui">
 
             </textarea>
 
@@ -21,25 +30,25 @@
                     Encriptar
                 </button>
 
-                <input type="button"  class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
             </div>
         </div>
-    </div>
 
-    <div class="txtencriptado">
 
-        <img src="" alt="" id="personas">
+        <div class="txtencriptado">
 
-        <div class="mensaje"  id="mensaje-ecriptado">
+            <img src="/img/muñeco.png" alt="" id="muneco">
 
-            <h2 id="alerta-mensaje"> Ningun Mensaje encontrado</h2>
+            <div class="mensaje" id="mensaje-encriptado">
 
-            <p>Ingrese el texto para encriptar</p>
+                <h2 id="alerta-mensaje"> Ningun mensaje fue encontrado</h2>
 
-            <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10"></textarea>
+                <p id="parrafo">Ingrese el texto para encriptar</p>
 
+            </div>
         </div>
     </div>
 </body>
 <script src="index.js"></script>
+
 </html>
